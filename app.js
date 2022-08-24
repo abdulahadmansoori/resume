@@ -1,15 +1,21 @@
 
-function showHide(name){
+function showHide(name) {
     var element = document.getElementById(name);
-    if(element.style.display === "none"){
-        element.style.display = "block";
-        
-    } else{
+    if (element.style.display === "block") {
         element.style.display = "none";
+
+    } else {
+        element.style.display = "block";
     }
 }
-// function viewCertificate(name){
-//     var image = document.getElementsById(name);
-//     var source = image.src;
-//     window.open(source);
-// }
+function showOptions(name) {
+    var details = document.getElementById("details");
+    var portfolio = document.getElementById("portfolio");
+    if (name === "details") {
+        portfolio.style.display = "none";
+        details.style.display = "block";
+    } else {
+        portfolio.style.display = "block";
+        details.style.display = "none";
+    }
+}

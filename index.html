@@ -21,53 +21,72 @@
         </div>
         <h1 class="name">ABDUL AHAD MANSOORI</h1>
         <h1 class="subtitle">Software Engineer</h1>
-        <br>
         <div class="social_icons">
-            <!-- <a href="https://wa.me/message/DTCX6ZMMSGPMP1"> -->
-                <img class="nav_icons social" src="./icons/whatsapp.gif" alt="WhatsApp" style="float: none;">
-            <!-- </a> -->
-            
-            <!-- <a href=""> -->
-                <img class="nav_icons social" src="./icons/linkedin.gif" alt="linkedin">
-            <!-- </a> -->
-            <!-- <a href="https://www.facebook.com/AbdulAhadMansoori110/"> -->
-                <img class="nav_icons social" src="./icons/facebook.gif" alt="facebook">
-            <!-- </a> -->
-            <!-- <a href=""> -->
-                <img class="nav_icons social" src="./icons/instagram.gif" alt="instagram">
-            <!-- </a> -->
-            <!-- <a href=""> -->
-                <img class="nav_icons social" src="./icons/twitter.gif" alt="twitter">
-            <!-- </a> -->
-            <!-- <a href=""> -->
-                <img class="nav_icons social" src="./icons/behance.gif" alt="behance">
-            <!-- </a> -->
-            <!-- <a href=""> -->
-                <img class="nav_icons social" src="./icons/youtube.gif" alt="youtube">
-            <!-- </a> -->
-            </div>
-            <br>
+            <a href="https://wa.me/message/DTCX6ZMMSGPMP1" target="_blank" class="nav_icons social"> <img
+                    src="./icons/whatsapp.gif" alt="WhatsApp" width="100%" /></a>
+            <a href="https://www.linkedin.com/in/abdulahadmansoori/" target="_blank" class="nav_icons social"> <img
+                    src="./icons/linkedin.gif" alt="linkedin" width="100%" /></a>
+            <a href="https://www.facebook.com/AbdulAhadMansoori110" target="_blank" class="nav_icons social"> <img
+                    src="./icons/facebook.gif" alt="facebook" width="100%" /></a>
+            <a href="" target="_blank" class="nav_icons social"> <img src="./icons/instagram.gif" alt="instagram"
+                    width="100%" /></a>
+            <a href="https://twitter.com/A_Ahad_Mansoori" target="_blank" class="nav_icons social"> <img
+                    src="./icons/twitter.gif" alt="twitter" width="100%" /></a>
+            <a href="https://www.behance.net/grapners" target="_blank" class="nav_icons social"> <img
+                    src="./icons/behance.gif" alt="behance" width="100%" /></a>
+            <a href="" target="_blank" class="nav_icons social"> <img src="./icons/youtube.gif" alt="youtube"
+                    width="100%" /></a>
         </div>
+        <br>
+    </div>
 
-        <!-- >>>   about  <<<  -->
+    <!-- >>>   options  <<<  -->
 
-        <div class="card option">
-            <div class="main">
-                <h5>Details</h5>
-            </div>
-            <hr>
-            <div class="main">
+    <div class="card option" id="options">
+        <div class="main" onclick="showOptions('details')">
+            <a href="#details"><h5>Details</h5></a>
+        </div>
+        <hr>
+        <div class="main" onclick="showOptions('portfolio')">
+            <a href="#portfolio">
                 <h5>Portfolios</h5>
+            </a>
+        </div>
+    </div>
+
+    <!-- >>>   portfolio  <<<  -->
+
+    <div class="card" id="portfolio">
+        <h1 class="skills heading">Portfolio</h1>
+        <div class="portfolio option">
+            <div class="portfolio-option-icon">
+                <img class="web-portfolio-option-icon" src="./icons/graphicDesigning-icon.png" alt="website portfolio">
+                <a href="https://www.behance.net/grapners" target="_blank">
+                    <h6 class="portfolio-option-name"> Graphic Designing </h6>
+                </a>
+            </div>
+            <div class="portfolio-option-icon">
+                <img class="web-portfolio-option-icon" src="./icons/webDevelopment.png" alt="website portfolio">
+                <h6 class="portfolio-option-name"> Web Development </h6>
             </div>
         </div>
+    </div>
+
+<!-- >>>   details options  <<<  -->
+
+    <div id="details">
         <div class="card option">
             <div class="navbar">
-                <img class="navbar_icon" src="./icons/about.gif" alt="about" style="float: none;">
-                <img class="navbar_icon" src="./icons/skills.gif" alt="skills">
-                <img class="navbar_icon" src="./icons/certificate.gif" alt="certificate">
-                <img class="navbar_icon" src="./icons/education.gif" alt="education">
-                <img class="navbar_icon" src="./icons/experience.gif" alt="experience">
-                <img class="navbar_icon" src="./icons/projects.png" alt="experience">
+                <a href="#about" class="navbar_icon"> <img src="./icons/about.gif" alt="about" width="100%" /></a>
+                <a href="#skills" class="navbar_icon"> <img src="./icons/skills.gif" alt="skills" width="100%" /></a>
+                <a href="#certificates" class="navbar_icon"> <img src="./icons/certificate.gif" alt="certificate"
+                        width="100%" /></a>
+                <a href="#educations" class="navbar_icon"> <img src="./icons/education.gif" alt="education"
+                        width="100%" /></a>
+                <a href="#experiences" class="navbar_icon"><img src="./icons/experience.gif" alt="experience"
+                        width="100%" /></a>
+                <a href="#projects" class="navbar_icon"> <img src="./icons/projects.png" alt="experience"
+                        width="100%" /></a>
             </div>
         </div>
 
@@ -85,7 +104,7 @@
 
         <!-- >>>   skills  <<<  -->
 
-        <div class="card">
+        <div class="card" id="skills">
             <img class="icons" src="./icons/skills.gif" alt="skills">
             <h1 class="skills heading">Skills</h1>
             <div class="edu">
@@ -143,12 +162,45 @@
 
         <!-- >>>   certificates  <<<  -->
 
-        <div class="card">
+        <div class="card" id="certificates">
             <img class="icons" src="./icons/certificate.gif" alt="certificates">
             <h1 class="certificate heading">Certificates</h1>
             <div class="edu">
+                <div class="cert" onclick="showHide('c14')">
+                    <h4>Artifical Intelligence</h4>
+                    <img class="more" src="./icons/more.gif" alt="read more">
+                    <div class="details" id="c14">
+                        <div>
+                            <img class="certified"
+                                src="./certificates/Abdul-Ahad-Mansoori-Certificate-AI-samsung innovation-campus.jpeg"
+                                alt="certified">
+                            <div class="more_details">
+                                <h5>Academy: <span>MAJU | Samsung Innovation Campus</span></h5>
+                                <h5>Date: <span>15th December, 2021</span></h5>
+                                <h5>Venue: <span>On Campus</span></h5>
+                                <button class="view" > <a href="./certificates/Abdul-Ahad-Mansoori-Certificate-AI-samsung innovation-campus.jpeg" target="_blank"> view certificate </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert" onclick="showHide('c15')">
+                    <h4>Internet of Things (IOT) System & Application Development</h4>
+                    <img class="more" src="./icons/more.gif" alt="read more">
+                    <div class="details" id="c15">
+                        <div>
+                            <img class="certified"
+                                src="./certificates/Abdul-Ahad-Mansoori-Certificate-iot-Govt.jpeg"
+                                alt="certified">
+                            <div class="more_details">
+                                <h5>Academy: <span>Dawood University | NAVTTC</span></h5>
+                                <h5>Date: <span>06th May, 2021</span></h5>
+                                <h5>Venue: <span>On Campus</span></h5>
+                                <button class="view" > <a href="./certificates/Abdul-Ahad-Mansoori-Certificate-iot-Govt.jpeg" target="_blank"> view certificate </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="cert" onclick="showHide('c1')">
-                    <!-- <img src="./icons/certificate.gif" alt="" style="width: 2vw;";> -->
                     <h4>Entrepreneurship</h4>
                     <img class="more" src="./icons/more.gif" alt="read more">
                     <div class="details" id="c1">
@@ -160,7 +212,7 @@
                                 <h5>Academy: <span>Cisco Networking Academy</span></h5>
                                 <h5>Date: <span>25th July, 2022</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view" onclick="viewCertificate(certified)">view certificate</button>
+                                <button class="view" > <a href="./certificates/Abdul AhadMansoori-Entrepreneurship-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -177,7 +229,7 @@
                                 <h5>Academy: <span>Cisco Networking Academy | NDG</span></h5>
                                 <h5>Date: <span>14th July, 2022</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-NDG Linux Unhatc-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -194,7 +246,7 @@
                                 <h5>Academy: <span>Cisco Networking Academy | OpenEDG</span></h5>
                                 <h5>Date: <span>31th March, 2022</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-Python Programmi-certificate.jpg" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -210,7 +262,7 @@
                                 <h5>Academy: <span>Coursera</span></h5>
                                 <h5>Date: <span>18th July, 2022</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-CanvaDesigning-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -227,7 +279,7 @@
                                 <h5>Academy: <span>Google Analytics Academy</span></h5>
                                 <h5>Date: <span>2nd July, 2022</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-AdvanceGoogleAnalytics-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -244,7 +296,7 @@
                                 <h5>Academy: <span>Networks Professionals</span></h5>
                                 <h5>Date: <span>17th Jun, 2021</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-Learnathon2021_S-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -261,7 +313,7 @@
                                 <h5>Academy: <span>SAYLANI WELFARE INTERNATIONAL TRUST</span></h5>
                                 <h5>Date: <span>27th Jun, 2021</span></h5>
                                 <h5>Venue: <span>SMIT Headquarter</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-Cisco Certified -certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -278,7 +330,7 @@
                                 <h5>Academy: <span>SAYLANI WELFARE INTERNATIONAL TRUST</span></h5>
                                 <h5>Date: <span>5th Aug, 2022</span></h5>
                                 <h5>Venue: <span>SMIT Headquarter</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-CCNAv7 Switching-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -295,7 +347,7 @@
                                 <h5>Academy: <span>SAYLANI WELFARE INTERNATIONAL TRUST</span></h5>
                                 <h5>Date: <span>26th Sep, 2022</span></h5>
                                 <h5>Venue: <span>SMIT Headquarter</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-CCNAv7 Enterpris-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -311,7 +363,7 @@
                                 <h5>Academy: <span>Virtual University | Digiskills</span></h5>
                                 <h5>Date: <span>Feb 2020 - May 2020</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-Wordpress-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -327,7 +379,7 @@
                                 <h5>Academy: <span>Virtual University | Digiskills</span></h5>
                                 <h5>Date: <span>Feb 2020 - May 2020</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-SEO-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -344,7 +396,7 @@
                                 <h5>Academy: <span>Virtual University | Digiskills</span></h5>
                                 <h5>Date: <span>Nov 2019 - May 2020</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"> <a href="./certificates/Abdul AhadMansoori-GraphicDesigning-certificate.png" target="_blank"> view certificate </a></button>
                             </div>
                         </div>
                     </div>
@@ -360,7 +412,9 @@
                                 <h5>Academy: <span>Virtual University | Digiskills</span></h5>
                                 <h5>Date: <span>Nov 2019 - May 2020</span></h5>
                                 <h5>Venue: <span>Online</span></h5>
-                                <button class="view">view certificate</button>
+                                <button class="view"><a
+                                        href="./certificates/Abdul AhadMansoori-Freelancing-certificate.png"> view
+                                        certificate</a></button>
                             </div>
                         </div>
                     </div>
@@ -370,7 +424,7 @@
 
         <!-- >>>   educations  <<<  -->
 
-        <div class="card">
+        <div class="card" id="educations">
             <img class="icons" src="./icons/education.gif" alt="educations">
             <h1 class="education heading">Educations</h1>
             <div class="edu">
@@ -435,11 +489,11 @@
             </div>
         </div>
 
-        <!-- >>>   experiencea  <<<  -->
+        <!-- >>>   experiences  <<<  -->
 
-        <div class="card">
+        <div class="card" id="experiences">
             <img class="icons" src="./icons/experience.gif" alt="experiences">
-            <h1 class="experiences heading">Experiences</h1>
+            <h1 class="experience heading">Experiences</h1>
             <div class="edu">
                 <div class="cert" onclick="showHide('exp1')">
                     <h4>Digital Marketing & Graphic Designing</h4>
@@ -449,7 +503,7 @@
                             <img class="certified" src="./icons/experience.gif" alt="certified">
                             <div class="more_details">
                                 <h5>Company : <span>Mohammad Ali Jinnah University MAJU</span></h5>
-                                <h5>Duration : <span>2017</span></h5>
+                                <h5>Duration : <span>05 months</span></h5>
                                 <h5>Description</h5>
                                 <p class="description">
                                     More over 4 months of working experience and more then 200+ Content designed for
@@ -502,7 +556,7 @@
 
         <!-- >>>   projects  <<<  -->
 
-        <div class="card">
+        <div class="card" id="projects">
             <img class="icons" src="./icons/projects.png" alt="experiences">
             <h1 class="experiences heading">Projects</h1>
             <div class="edu">
@@ -603,10 +657,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="cert" onclick="showHide('p5')">
-                    <h4>MAJU Admission Campaign FA22 | Graphic Designing for Digital Platforms</h4>
+                <div class="cert" onclick="showHide('p6')">
+                    <h4>MAJU Admission Campaign FA22 | Graphic Designing</h4>
                     <img class="more" src="./icons/more.gif" alt="read more">
-                    <div class="details" id="p5">
+                    <div class="details" id="p6">
                         <div>
                             <img class="certified" src="./icons/projects.png" alt="certified">
                             <div class="more_details">
@@ -622,20 +676,21 @@
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="main">
-                <p class="note">Click the Button to download Complete Resume!!</p>
-                <a href="./files/AAM-CResume.pdf" target="_blank" download>
-                    <h5 class="btn">Get Resume</h5>
-                </a>
-            </div>
-        </div>
-        <div class="developer" alt="This site is developed by grapners">
-            <img class="devlogo" src="./icons/grapners_logo.png" alt="grapners icon">
-            <a href="https://m.facebook.com/grapners/" target="_blank">
-                <h6> Grapners</h6>
+    </div>
+    <div class="card">
+        <div class="main">
+            <p class="note">Click the Button to download Complete Resume!!</p>
+            <a href="./files/Abdul-Ahad-Mansoori-Resume.pdf" target="_blank" download>
+                <h5 class="btn">Get Resume</h5>
             </a>
         </div>
+    </div>
+    <div class="developer" alt="This site is developed by grapners">
+        <img class="devlogo" src="./icons/grapners_logo.png" alt="grapners icon">
+        <a href="https://m.facebook.com/grapners/" target="_blank">
+            <h6> Grapners</h6>
+        </a>
+    </div>
 
 </body>
 
