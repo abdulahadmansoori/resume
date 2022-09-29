@@ -11,13 +11,6 @@ a {
     color: #ffffff;
 }
 
-/* .back {
-    width: 100%;
-    height: 40%;
-    background: #2D4EA2;
-    position: absolute;
-    z-index: -1;
-} */
 body {
     background: #eaeaea;
 }
@@ -37,35 +30,10 @@ body {
     border-radius: 10px;
     margin-top: 1%;
 }
-/* .category{
-    margin: auto;
-} */
-#Web_Development{
-    display: none;
-}
-.development_portfolio{
-    display: flex;
-    margin: 10%;
-    
-}
-.DP_card{
-    width: 30%;
-    height:50%;
-    /* background: rgb(230, 211, 211); */
-    margin: 2%;
-    text-align: center;
-    background-color: #2D4EA2;
-    font-size: 1.5vw;
-    border-radius: 5%;
-    padding: 1%;
-    /* flex: content; */
-    
-}
 
 .DP_class_icon{
     width: 100%;
     padding: 5%;
-    /* border-radius: 50%; */
 }
 .option {
     display: flex;
@@ -77,9 +45,7 @@ body {
 
 .portfolio-option-icon {
     flex: content;
-    /* margin: auto; */
     margin: 1%;
-    /* padding: 5%; */
     background: rgb(238, 237, 237);
     border-radius: 2%;
     cursor: pointer;
@@ -101,7 +67,6 @@ body {
 .web-portfolio-option-icon {
     width: 50%;
     margin: 20% 10%;
-    /* margin-top: 30%; */
 }
 
 .main {
@@ -122,7 +87,6 @@ body {
 }
 
 .nav_icons {
-    /* display: flexbox; */
     flex: content;
     width: 5%;
     float: left;
@@ -143,7 +107,6 @@ body {
 }
 
 .navbar_icon {
-    /* display: flexbox; */
     flex: content;
     width: 0%;
     float: left;
@@ -257,14 +220,6 @@ h4 {
     display: inline;
 }
 
-
-/* @media only screen and (max-width: 620px) {
-    /* For mobile phones: 
-    .menu, .main, .right {
-      width: 100%;
-    }
-  } 
-*/
 .devlogo {
     width: 20%;
     float: left;

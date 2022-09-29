@@ -19,9 +19,4 @@ function showOptions(name) {
         details.style.display = "none";
     }
 }
-function showPortfolio(id1, id2){
-    var element1 = document.getElementById(id1);
-    var element2 = document.getElementById(id2);
-    element1.style.display = "none";
-    element2.style.display = "block";
-}
+
