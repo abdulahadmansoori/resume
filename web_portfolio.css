@@ -43,7 +43,9 @@
     margin-top: 1%;
     font-size: 1rem;
 }
-
+.item span{
+    margin: 0% 1%;
+}
 .cat {
     font-size: 1rem;
 }
